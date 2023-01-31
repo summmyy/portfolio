@@ -23,14 +23,14 @@ const projects = [
   {
     title: "Little Lemon Restaurant",
     description:
-      "A restaurant with a beautiful looking webiste and responvie table booking page, it also has a sign up and login page.",
+      "A restaurant with a beautiful looking webiste and responsive table booking page, it also has a sign up and login page.",
     getImageSrc: () => require("../images/restaurant.jpg"),
     link: 'https://summmyy.github.io/littlelemon/'
   },
   {
     title: "React Calculator",
     description:
-      "A simple calculator built using react and chakra UI, which allows me and my nerd friends to make calculations while looking at nice UI.",
+      "A simple calculator built using react and chakra UI, which allows me and my nerd friends to make calculations while looking at a nice UI.",
     getImageSrc: () => require("../images/photo1.jpg"),
     link: 'https://summmyy.github.io/React-Calculator/'
   },
