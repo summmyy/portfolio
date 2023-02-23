@@ -28,6 +28,13 @@ const projects = [
     link: 'https://summmyy.github.io/littlelemon/'
   },
   {
+    title: "Destined For Greatness",
+    description:
+      "A game that decides your fate. Play now and see where your path leads",
+    getImageSrc: () => require("../images/DFG.jpeg"),
+    link: 'https://destined-for-greatnesss.vercel.app'
+  },
+  {
     title: "React Calculator",
     description:
       "A simple calculator built using react and chakra UI, which allows me and my nerd friends to make calculations while looking at a nice UI.",
