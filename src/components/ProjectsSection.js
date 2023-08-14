@@ -25,7 +25,7 @@ const projects = [
     description:
       "A restaurant with a beautiful looking webiste and a responsive table booking page, it also has a sign up and login page.",
     getImageSrc: () => require("../images/restaurant.jpg"),
-    link: 'https://summmyy.github.io/littlelemon/'
+    link: 'https://littlelemon-frontend.vercel.app/'
   },
   {
     title: "Destined For Greatness",
