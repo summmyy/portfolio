@@ -1,6 +1,6 @@
 import React from "react";
 import FullScreenSection from "./FullScreenSection";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
 import Card from "./Card";
 
 
@@ -18,14 +18,21 @@ import Card from "./Card";
   getImageSrc: () => require("../images/photo4.jpg"),
   link: 'https://summmyy.github.io/'
 },
+{
+    title: "Calculator",
+    description:
+      "A simple calculator built using react and chakra UI, which allows me and my nerd friends to make calculations while looking at a nice UI.",
+    getImageSrc: () => require("../images/photo1.jpg"),
+    link: 'https://summmyy.github.io/React-Calculator/'
+  },
  */
 const projects = [
   {
-    title: "Little Lemon Restaurant",
+    title: "Little Lemon",
     description:
       "A restaurant with a beautiful looking webiste and a responsive table booking page, it also has a sign up and login page.",
     getImageSrc: () => require("../images/restaurant.jpg"),
-    link: 'https://littlelemons.vercel.app/'
+    link: 'https://summmyy.github.io/littlelemon/'
   },
   {
     title: "Destined For Greatness",
@@ -35,11 +42,11 @@ const projects = [
     link: 'https://destined-for-greatnesss.vercel.app'
   },
   {
-    title: "React Calculator",
+    title: "Bill Paying Bot",
     description:
-      "A simple calculator built using react and chakra UI, which allows me and my nerd friends to make calculations while looking at a nice UI.",
+      "An automated bot that pays my monthly phone bill, created using selenium and chrome driver",
     getImageSrc: () => require("../images/photo1.jpg"),
-    link: 'https://summmyy.github.io/React-Calculator/'
+    link: 'https://github.com/summmyy?tab=repositories'
   },
 ];
 
@@ -55,10 +62,9 @@ const ProjectsSection = () => {
       <Heading as="h1" id="projects-section">
         Featured Projects
       </Heading>
-      <Box
-        display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
-        gridGap={8}
+      <SimpleGrid
+        columns={{base:1,xl:2 ,'2xl': 2}}
+        spacing={8}
       >
         {projects.map((project) => (
           <Card
@@ -69,7 +75,7 @@ const ProjectsSection = () => {
             link={project.link}
           />
         ))}
-      </Box>
+      </SimpleGrid>
     </FullScreenSection>
   );
 };

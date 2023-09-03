@@ -73,15 +73,15 @@ const Header = () => {
       backgroundColor="#18181b" 
       ref={headerRef} 
     > 
-      <Box color="white" maxWidth="1280px" margin="0 auto"> 
+      <Box color="white" maxWidth={{base : '100vw','2xl':"1280px"}} > 
         <HStack 
-          px={16} 
+          px={{base : 1.5,xl : 72,'2xl' : 72}} 
           py={4} 
-          justifyContent="space-between" 
+          justifyContent={{'2xl' : "space-between" }}
           alignItems="center" 
         > 
           <nav> 
-            <HStack spacing={8}> 
+            <HStack spacing={8} width='50vw'> 
               {socials.map(({ icon, url }) => ( 
                 <a 
                   key={url} 
@@ -95,7 +95,7 @@ const Header = () => {
             </HStack> 
           </nav> 
           <nav> 
-            <HStack spacing={8}> 
+            <HStack spacing={8} width='50vw'> 
               <a href="#projects" onClick={handleClick("projects")}> 
                 Projects 
               </a> 
