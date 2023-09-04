@@ -32,7 +32,14 @@ const projects = [
     description:
       "A restaurant with a beautiful looking webiste and a responsive table booking page, it also has a sign up and login page.",
     getImageSrc: () => require("../images/restaurant.jpg"),
-    link: 'https://summmyy.github.io/littlelemon/'
+    link: 'https://littlelemons.vercel.app/'
+  },
+  {
+    title: "Penny Pal",
+    description:
+      "A personal finance tracking app which allows you monitor your finances while giving you a visualization of your data.",
+    getImageSrc: () => require("../images/PennyPal.jpg"),
+    link: 'https://pennypal.vercel.app/'
   },
   {
     title: "Destined For Greatness",
